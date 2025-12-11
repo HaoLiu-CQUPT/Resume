@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 左侧导航栏 -->
+        <aside class="sidebar">
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#personal-info" class="nav-link active">个人信息</a></li>
+                    <li><a href="#education" class="nav-link">教育经历</a></li>
+                    <li><a href="#projects" class="nav-link">项目经历</a></li>
+                    <li><a href="#work" class="nav-link">工作/项目经历</a></li>
+                    <li><a href="#skills" class="nav-link">个人技能</a></li>
+                    <li><a href="#portfolio" class="nav-link">作品集</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- 主要内容区域 -->
+        <main class="main-content">
+            <!-- 个人信息 -->
+            <section id="personal-info" class="section">
+                <div class="personal-header">
+                    <div class="personal-info">
+                        <h1>刘昊</h1>
+                        <p class="intro">我是一名充满热情的前端开发工程师，专注于创建美观且功能强大的Web应用。拥有丰富的项目经验，擅长使用现代前端技术栈解决复杂问题。</p>
+                        <div class="contact-info">
+                            <p><strong>邮箱：</strong>1064756784@qq.com</p>
+                            <p><strong>电话：</strong>13800000000</p>
+                            <p><strong>地址：</strong>中国，重庆市</p>
+                            <p><strong>个人主页：</strong><a href="https://example.com" target="_blank">https://example.com</a></p>
+                        </div>
+                    </div>
+                    <div class="avatar">
+                        <img src="D:\Resume\1.png" alt="个人头像">
+                    </div>
+                </div>
+            </section>
+
+            <!-- 教育经历 -->
+            <section id="education" class="section">
+                <h2>教育经历</h2>
+                <div class="education-item">
+                    <h3>学校名称</h3>
+                    <p class="major">专业：计算机科学与技术</p>
+                    <p class="time">时间：2020.09 - 2024.06</p>
+                    <p class="description">主修课程包括数据结构、算法设计、Web开发、数据库系统等。在校期间积极参与各类项目实践，培养了扎实的编程基础和解决问题的能力。</p>
+                </div>
+                <div class="education-item">
+                    <h3>学校名称（研究生）</h3>
+                    <p class="major">专业：软件工程</p>
+                    <p class="time">时间：2024.09 - 至今</p>
+                    <p class="description">深入研究前端工程化和性能优化，参与多个企业级项目开发。</p>
+                </div>
+            </section>
+
+            <!-- 获奖经历 -->
+            <section id="awards" class="section">
+                <h2>获奖经历</h2>
+                <div class="awards-list">
+                    <div class="award-item">
+                        <h3>全国大学生程序设计竞赛</h3>
+                        <p class="award-level">一等奖</p>
+                        <p class="time">2023.05</p>
+                    </div>
+                    <div class="award-item">
+                        <h3>优秀学生奖学金</h3>
+                        <p class="award-level">一等奖学金</p>
+                        <p class="time">2022-2023学年</p>
+                    </div>
+                    <div class="award-item">
+                        <h3>Web开发创新大赛</h3>
+                        <p class="award-level">最佳设计奖</p>
+                        <p class="time">2023.10</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 项目经历 -->
+            <section id="projects" class="section">
+                <h2>项目经历</h2>
+                <div class="project-item">
+                    <div class="project-header">
+                        <h3>电商平台前端开发</h3>
+                        <button class="toggle-btn" data-project="project1">展开</button>
+                    </div>
+                    <div class="project-content" id="project1">
+                        <p class="time">时间：2023.03 - 2023.08</p>
+                        <p class="description"><strong>项目描述：</strong>负责开发一个大型电商平台的前端界面，使用React框架构建单页应用。实现了商品展示、购物车、订单管理等核心功能模块。</p>
+                        <p class="description"><strong>技术栈：</strong>React, Redux, TypeScript, Ant Design, Webpack</p>
+                        <p class="description"><strong>主要成果：</strong>优化了页面加载速度，首屏渲染时间减少40%；实现了响应式设计，适配移动端和PC端；代码复用率达到70%以上。</p>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-header">
+                        <h3>在线教育平台</h3>
+                        <button class="toggle-btn" data-project="project2">展开</button>
+                    </div>
+                    <div class="project-content" id="project2">
+                        <p class="time">时间：2022.09 - 2023.02</p>
+                        <p class="description"><strong>项目描述：</strong>参与开发在线教育平台，主要负责视频播放、课程管理、学习进度跟踪等功能的实现。</p>
+                        <p class="description"><strong>技术栈：</strong>Vue.js, Vuex, Element UI, Axios</p>
+                        <p class="description"><strong>主要成果：</strong>实现了流畅的视频播放体验，支持多种视频格式；开发了实时学习进度同步功能；优化了课程列表的加载性能。</p>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-header">
+                        <h3>个人博客系统</h3>
+                        <button class="toggle-btn" data-project="project3">展开</button>
+                    </div>
+                    <div class="project-content" id="project3">
+                        <p class="time">时间：2022.01 - 2022.06</p>
+                        <p class="description"><strong>项目描述：</strong>独立开发了一个全栈个人博客系统，包括前端展示页面和后端管理系统。</p>
+                        <p class="description"><strong>技术栈：</strong>HTML, CSS, JavaScript, Node.js, Express, MongoDB</p>
+                        <p class="description"><strong>主要成果：</strong>实现了文章发布、分类管理、评论系统等功能；设计了简洁美观的用户界面；支持Markdown格式编辑。</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 工作/项目经历 -->
+            <section id="work" class="section">
+                <h2>工作/项目经历</h2>
+                <div class="work-item">
+                    <h3>前端开发工程师 | 某某科技有限公司</h3>
+                    <p class="time">2023.07 - 至今</p>
+                    <p class="description">负责公司核心产品的前端开发工作，参与需求分析、技术方案设计、代码实现和性能优化。与产品、设计、后端团队紧密协作，确保项目按时高质量交付。</p>
+                    <ul class="work-responsibilities">
+                        <li>开发和维护多个Web应用，使用React和Vue.js框架</li>
+                        <li>优化前端性能，提升用户体验</li>
+                        <li>参与技术选型和架构设计</li>
+                        <li>指导 junior 开发人员，进行代码审查</li>
+                    </ul>
+                </div>
+                <div class="work-item">
+                    <h3>前端开发实习生 | 某某互联网公司</h3>
+                    <p class="time">2022.06 - 2022.12</p>
+                    <p class="description">在实习期间，参与了多个项目的开发，学习了企业级前端开发流程和最佳实践。</p>
+                    <ul class="work-responsibilities">
+                        <li>参与移动端H5页面开发</li>
+                        <li>修复bug和优化现有功能</li>
+                        <li>编写技术文档</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 个人技能 -->
+            <section id="skills" class="section">
+                <h2>个人技能</h2>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3>前端技术</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Vue.js</span>
+                            <span class="skill-tag">Angular</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>工具与框架</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Webpack</span>
+                            <span class="skill-tag">Vite</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Express</span>
+                            <span class="skill-tag">MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>其他技能</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">UI/UX设计</span>
+                            <span class="skill-tag">响应式设计</span>
+                            <span class="skill-tag">性能优化</span>
+                            <span class="skill-tag">团队协作</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 作品集 -->
+            <section id="portfolio" class="section">
+                <h2>作品集</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="https://via.placeholder.com/300x200" alt="作品1">
+                        </div>
+                        <h3>电商平台</h3>
+                        <p>一个功能完整的电商购物平台，包含商品展示、购物车、订单管理等模块。</p>
+                        <a href="#" class="portfolio-link">查看详情</a>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="https://via.placeholder.com/300x200" alt="作品2">
+                        </div>
+                        <h3>在线教育平台</h3>
+                        <p>提供在线课程学习、视频播放、学习进度跟踪等功能的教育平台。</p>
+                        <a href="#" class="portfolio-link">查看详情</a>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="https://via.placeholder.com/300x200" alt="作品3">
+                        </div>
+                        <h3>个人博客系统</h3>
+                        <p>全栈开发的个人博客系统，支持文章发布、分类管理和评论功能。</p>
+                        <a href="#" class="portfolio-link">查看详情</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
